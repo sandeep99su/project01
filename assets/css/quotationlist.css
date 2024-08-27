@@ -1,0 +1,376 @@
+
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-fabric-mdl2-assets: "Fabric MDL2 Assets";
+  --font-roboto: Roboto;
+
+  /* font sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-ghostwhite-100: #fafaff;
+  --background-color: #f4f3ff;
+  --light-border: #e9e9e9;
+  --color-gainsboro-100: #e6e6e6;
+  --color-gainsboro-200: #e6d9d9;
+  --border: #ddd;
+  --purple-primary: #4b38b3;
+  --purple-secondary: #6938ef;
+  --disable: #8a8a8a;
+  --primary-text: #101828;
+  --neutral-text: #666;
+  --color-snow: #fef3f2;
+  --color-tomato: #f06748;
+  --color-oldlace: #fffaeb;
+  --color-orange: #ffbe1f;
+  --color-honeydew: #ecfdf3;
+  --green: #12b76a;
+  --secondary-text: #444;
+  --notification-bg: #fb6514;
+
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-xl: 20px;
+  --gap-5xs: 8px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-xl: 20px;
+  --padding-base: 16px;
+  --padding-5xl: 24px;
+  --padding-9xs: 4px;
+  --padding-7xs: 6px;
+  --padding-xs: 12px;
+  --padding-2xs: 11px;
+  --padding-smi: 13px;
+  --padding-5xs: 8px;
+  --padding-101xl: 120px;
+  --padding-11xl: 30px;
+  --padding-41xl: 60px;
+  --padding-6xs: 7px;
+  --padding-6xl: 25px;
+  --padding-lgi: 19px;
+  --padding-11xs: 2px;
+  --padding-10xl: 29px;
+  --padding-mini: 15px;
+  --padding-13xl: 32px;
+  --padding-lg: 18px;
+
+  /* Border radiuses */
+  --br-9xs: 4px;
+}
+    /* quotaion contaioner */
+    .mainsection{
+        /* display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: var(--gap-base);
+        font-size: var(--font-size-base);
+        color: var(--primary-text);
+        align-self: stretch;
+        background-color: var(--color-white);
+        justify-content: space-between;
+       
+          padding: 8px;
+        box-sizing: border-box;
+        top: 0;
+        z-index: 99;
+        position: fixed;
+        max-width: 100%;
+        gap: var(--gap-xl);
+        text-align: left;
+        font-size: var(--font-size-sm);
+        color: var(--neutral-text);
+        font-family: var(--font-fabric-mdl2-assets);
+        position: fixed; 
+        top: 0;        
+        left: 250px;    
+        width: calc(100% - 250px);  */
+      display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+      
+      } 
+      /*  */
+        .container {
+          width: calc(100% - 330px); 
+          margin-top: 120px;
+          background-color: #fff;
+          padding: 20px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          position: fixed;
+          bottom: 0;
+          left: 288px;
+          top: 0; 
+          overflow-y: auto;
+          overflow-x: hidden; 
+          box-sizing: border-box; 
+          font-size: 16px;
+          height: 84vh;
+         
+          max-height: 1200px; /* Set a maximum width to prevent it from growing too large */
+      
+      
+          
+        }
+        .conthead{
+          display: flex;
+justify-content:space-between;
+
+          /* flex-direction: column; */
+          /* justify-content: space-around; */
+      }
+
+      .newquot{
+        padding: 10px;
+        color: white;
+background-color: #6938ef;
+border: none;
+border-radius: 4px;
+
+      }
+        .pagedetail{
+position:fixed;
+         margin-top:78px;
+       margin-left: 40px;
+        }
+        .mainsection{
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+      
+          position: relative;
+          background-color: var(--color-white);
+          display: flex;
+          align-items: startflex-;
+          justify-content: flex-start;
+          padding: 10px;
+          gap: 24px;
+          font-size: 22px;
+          color: var(--primary-text);
+          font-family: var(--font-inter);
+             position: fixed; 
+          /* top: 0;         */
+          left: 250px;    
+          width: calc(100% - 250px); 
+          /* height: 100%; */
+      position: relative;
+      
+      overflow-y: auto;
+        
+        }
+        
+      
+      h2 {
+        font-weight: 500;
+      
+          color: #000000;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse; /* Ensures borders between cells are merged */
+        margin-bottom: 20px; /* Space below the table */
+        border: 0.6px solid rgb(99, 99, 99); /* Border around the table */
+        padding: 0px;
+        position: relative;
+        top: 30px;
+      
+      }
+      
+      table thead {
+          /* background-color: #f4f4f4; */
+          font-weight: 200;
+      }
+      
+      table th, table td {
+          padding: 12px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+      
+      table th {
+          font-weight: bold;
+       
+      }
+      
+      table tbody tr:hover {
+          background-color: #f1f1f1;
+      }
+      
+      .status {
+          padding: 5px 10px;
+          border-radius: 4px;
+          font-size: 12px;
+          text-align: center;
+      }
+      
+      .status.Converted {
+       border: 0px solid  rgb(220, 218, 218);
+          color: var(--green);
+   font-weight: 600;
+   background-color: var(--color-honeydew);
+      }
+      
+      .status.Receipt {
+        border: 0px solid  rgb(220, 218, 218);
+
+          color: var(--color-orange);
+          font-weight: 600;
+          background-color: var(--color-oldlace);
+      }
+      
+      .status.Cancel {
+        border: 0px solid  rgb(220, 218, 218);
+  
+          color: var(--color-tomato);
+          font-weight: 600;
+          background-color: var(--color-snow);
+      }
+      
+      .pagination-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      margin-top: 80px;
+      
+      bottom: 0;
+      z-index: 99;
+      /* position: fixed; */
+      
+      
+      
+      }
+      
+      .entries-select {
+          display: flex;
+          align-items: center;
+      }
+      
+      .entries-select select {
+          margin-left: 10px;
+          padding: 3px  20px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          font-size: 14px;
+      }
+      
+      .pagination {
+          display: flex;
+          align-items: center;
+          gap: 0px;
+      }
+      
+      .pagination button {
+          padding: 8px 16px;
+          border: 1px solid #ddd;
+          background-color: #ffffff;
+          color: rgb(106, 26, 187);
+          border-radius: 0
+          px;
+          cursor: pointer;
+          font-size: 14px;
+      }
+      
+      .pagination button.disabled {
+          background-color: #ddd;
+          cursor: not-allowed;
+      }
+      
+      .paginationNumbers button {
+          padding: 8px 12px;
+          border: 1px solid #ddd;
+          background-color: white;
+          color: #333;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 14px;
+      }
+      
+      .paginationNumbers button.active {
+          background-color: #4caf50;
+          color: white;
+          font-weight: bold;
+      }
+      
+      /* Add to existing CSS */
+      .table-info {
+          font-size: 14px;
+          color: #555;
+       
+          text-align: right;
+      }
+      
+      
+      /* qotation container */
+      
+      main{
+        flex: 1;
+        background-color: var(--background-color);
+        /* height: 100%; */
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 250px;
+        /* max-height: 1400px; */
+        overflow: hidden;
+      }
+      
+      
+      
+      #prevPage{
+        border-radius:  4px 0px 0px 4px;
+      }
+      
+      #nextPage{
+        border-radius:  0px 4px 4px 0px;
+      }
+      
+      .actionbtn{
+        padding: 5px 0px;
+        display: none;
+        margin-right: 5px;
+      
+      }
+      .quotationrow {
+        position: relative;
+    }
+    
+    .quotationrow td {
+        padding-right: 30px; /* Add space to the right for the buttons */
+    }
+    
+    .quotationrow .actions {
+        position: absolute;
+        right: 0;
+        top: 0;
+ 
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .quotationrow .actionbtn {
+        margin-left: 5px; /* Adjust as needed */
+        display: none; /* Hide buttons by default */
+    }
+    
+    .quotationrow:hover .actionbtn {
+        display: inline-block; /* Show buttons on hover */
+    }
+    
+
+    .headqo{
+display: flex;
+
+justify-content: space-between;
+
+    }

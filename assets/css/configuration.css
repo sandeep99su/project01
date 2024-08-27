@@ -1,0 +1,394 @@
+
+:root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-fabric-mdl2-assets: "Fabric MDL2 Assets";
+    --font-segoe-ui: "Segoe UI";
+    --font-roboto: Roboto;
+  
+    /* font sizes */
+    --font-size-base: 16px;
+    --font-size-sm: 14px;
+    --font-size-3xl: 22px;
+    --font-size-lg: 18px;
+    --font-size-xs: 12px;
+  
+    /* Colors */
+    --white-icon: #fff;
+    --notification-bg: #fb6514;
+    --disable: #8a8a8a;
+    --primary-text: #101828;
+    --color-ghostwhite-100: #fafaff;
+    --color-ghostwhite-200: #fbf7ff;
+    --background-color: #f4f3ff;
+    --neutral-text: #666;
+    --action-color: #de175e;
+    --border: #ddd;
+    --color-silver-100: #c4c4c4;
+    --color-silver-200: rgba(196, 196, 196, 0.09);
+    --secondary-text: #444;
+    --purple-primary: #4b38b3;
+    --purple-secondary: #6938ef;
+  
+    /* Gaps */
+    --gap-xl: 20px;
+    --gap-base: 16px;
+    --gap-3xs: 10px;
+    --gap-5xs: 8px;
+    --gap-5xl: 24px;
+    --gap-0: 0px;
+    --gap-9xs: 4px;
+    --gap-7xs: 6px;
+    --gap-4xs: 9px;
+  
+    /* Paddings */
+    --padding-base: 16px;
+    --padding-5xl: 24px;
+    --padding-9xs: 4px;
+    --padding-11xs: 2px;
+    --padding-7xs: 6px;
+    --padding-mini: 15px;
+    --padding-xl: 20px;
+    --padding-xs: 12px;
+    --padding-smi: 13px;
+    --padding-2xs: 11px;
+    --padding-5xs: 8px;
+    --padding-10xs: 3px;
+    --padding-4xs: 9px;
+    --padding-2xl: 21px;
+    --padding-4xl: 23px;
+    --padding-9xl: 28px;
+  
+    /* Border radiuses */
+    --br-11xs: 2px;
+    --br-5xs: 8px;
+    --br-9xs: 4px;
+  }
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    max-height: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Enable scrolling if needed */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+      
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1001; /* Ensure it's above the overlay */
+        display: none; /* Hidden by default */
+
+        box-sizing: border-box; /* Ensure padding is included in width calculation */
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.close-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.row-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.row-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.row-item input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+   height: 42px;
+}
+
+.row-item select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+   height: 41.3px;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #FF4D4F;
+    font-size: 18px;
+}
+
+.save-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FF4D4F;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.frame-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    padding: 20px; /* Add padding as needed */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+
+
+/* Container for buttons */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Base styling for buttons */
+.action-button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Adjust as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000; /* Text color */
+    background-color: #007bff; /* Default background color */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px; /* Minimum width */
+}
+
+/* Specific styles for 'Cancel' button */
+.cancel-button {
+    background-color: transparent; /* Red background color for Cancel */
+    border: 1px solid #ddd;
+    position: relative;
+    font-size: var(--font-size-base);
+    line-height: 16px;
+    font-weight: 600;
+    color: var(--secondary-text);
+    display: inline-block;
+    min-width: 54px;
+        cursor: pointer;
+    border: 1px solid var(--border);
+    /* padding: var(--padding-2xs) 47px; */
+    background-color: transparent;
+    border-radius: var(--br-11xs);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Specific styles for 'Save' button */
+.save-button {
+    position: relative;
+    font-size: var(--font-size-base);
+    line-height: 16px;
+    font-weight: 600;
+    font-family: var(--font-inter);
+    color: var(--white-icon);
+    text-align: left;
+    display: inline-block;
+    min-width: 54px;
+
+    cursor: pointer;
+    border: 0;
+    /* padding: var(--padding-smi) 56px; */
+    background-color: var(--action-color);
+    border-radius: var(--br-11xs);
+    justify-content: center;
+}
+
+/* Hover effects */
+.save-button:hover {
+    background-color: #ff3d85; /* Darker background on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.cancel-button:hover {
+    background-color: var(--color-silver-200);
+    border: 1px solid var(--color-silver-100);
+    box-sizing: border-box;
+  }
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .save-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .save-btn {
+        width: 100%;
+    }
+}
+
+/* Wrapper to help control the width and spacing */
+.select-wrapper {
+    position: relative; /* Allows for positioning of custom elements */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.3px;
+}
+
+.product-actions{
+    display: flex;
+    justify-content: flex-end;
+
+
+    
+}
+.icon-btn1 {
+    margin-left: 10px;
+    border: none;
+    padding: 7px;
+    font: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+.reset-btn{
+    border: none;
+    padding: 7px;
+    font: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* General styles for the overlay */
+.overlay {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px);  */
+    display: none; /* Hidden by default */
+    /* Ensure it sits above other content but below the container */
+}
+
+/* Styles for the popup container */
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Ensure it sits above the overlay */
+    display: none; /* Hidden by default */
+    width: 90%;
+    max-width: 700px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Display the container when it's visible */
+.container:not(.hidden) {
+    display: block;
+}
+
+/* Display the overlay when it's visible */
+.overlay:not(.hidden) {
+    display: block;
+}
+
+/* Styling for the close button */
+.close-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    float: right;
+}
+
+/* Blur effect on the body */
+.body-blur {
+    position: relative;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.body-blur::before {
+    content: "";
+    position: absolute;
+    top: 2000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    pointer-events: none; /* Allow interaction with the container */
+    z-index: 0; /* Behind the content but above the body */
+}
+
+
+.columnname{
+    margin-left: 35px;
+}

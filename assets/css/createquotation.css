@@ -1,0 +1,811 @@
+
+:root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-fabric-mdl2-assets: "Fabric MDL2 Assets";
+    --font-segoe-ui: "Segoe UI";
+    --font-roboto: Roboto;
+  
+    /* font sizes */
+    --font-size-base: 16px;
+    --font-size-sm: 14px;
+    --font-size-3xl: 22px;
+    --font-size-lg: 18px;
+    --font-size-xs: 12px;
+  
+    /* Colors */
+    --white-icon: #fff;
+    --notification-bg: #fb6514;
+    --disable: #8a8a8a;
+    --primary-text: #101828;
+    --color-ghostwhite-100: #fafaff;
+    --color-ghostwhite-200: #fbf7ff;
+    --background-color: #f4f3ff;
+    --neutral-text: #666;
+    --action-color: #de175e;
+    --border: #ddd;
+    --color-silver-100: #c4c4c4;
+    --color-silver-200: rgba(196, 196, 196, 0.09);
+    --secondary-text: #444;
+    --purple-primary: #4b38b3;
+    --purple-secondary: #6938ef;
+  
+    /* Gaps */
+    --gap-xl: 20px;
+    --gap-base: 16px;
+    --gap-3xs: 10px;
+    --gap-5xs: 8px;
+    --gap-5xl: 24px;
+    --gap-0: 0px;
+    --gap-9xs: 4px;
+    --gap-7xs: 6px;
+    --gap-4xs: 9px;
+  
+    /* Paddings */
+    --padding-base: 16px;
+    --padding-5xl: 24px;
+    --padding-9xs: 4px;
+    --padding-11xs: 2px;
+    --padding-7xs: 6px;
+    --padding-mini: 15px;
+    --padding-xl: 20px;
+    --padding-xs: 12px;
+    --padding-smi: 13px;
+    --padding-2xs: 11px;
+    --padding-5xs: 8px;
+    --padding-10xs: 3px;
+    --padding-4xs: 9px;
+    --padding-2xl: 21px;
+    --padding-4xl: 23px;
+    --padding-9xl: 28px;
+  
+    /* Border radiuses */
+    --br-11xs: 2px;
+    --br-5xs: 8px;
+    --br-9xs: 4px;
+  }
+  main{
+    flex: 1;
+    background-color: var(--background-color);
+    /* height: 100%; */
+    /* display: flex; */
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 250px;
+    /* max-height: 1400px; */
+  }
+.main-content {
+    width: 95%;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.pagedetail{
+
+             margin-top:78px;
+           margin-left: 60px;
+            }
+.headermain {
+  
+        align-self: stretch;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 var(--padding-xl);
+}
+
+.headermain h1 {
+
+        margin: 0;
+        position: relative;
+        font-size: 24px;
+        line-height: 16px;
+        font-weight: 500;
+        font-family: inherit
+}
+
+/* Form Section */
+.form-section {
+    margin-top: 20px;
+}
+
+.form-group {
+    /* margin-bottom: 32px; */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 9px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.form-group.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group.half-width {
+    flex: 1;
+    margin-right: 10px;
+    margin-top: 18px;
+}
+
+.form-group.half-width:last-child {
+    margin-right: 0;
+}
+.conthead{
+margin-top: 38px;
+}
+
+.cus{
+    margin-top: 20px;
+}
+.cusdiv{
+    padding-top: 10px;
+}
+
+.contdetail{
+    font-weight:0px;
+    margin-top: 50px;
+}
+.transdetail{
+    margin-top: 50px; 
+}
+/* Address Section */
+.address-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.address-column {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.address-column:last-child {
+    padding-right: 0;
+}
+
+.address-column h3 {
+    margin-bottom: 10px;
+}
+
+.transport-docs{
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+.transport-docs button{
+    border: none;
+    padding: 12px;
+    font: 8px;
+    background: transparent;
+    cursor: pointer;
+
+
+}
+/* Table wrapper styles */
+.product-table-wrapper {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* Table styles */
+.product-table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders to avoid double borders */
+    border-radius: 8px; /* Rounded corners for the entire table */
+    overflow: hidden; /* Ensure content respects border radius */
+}
+
+/* Header styles */
+.headmain {
+    background-color: #f4f4f4; /* Background color for the header */
+}
+
+.headmain th {
+    padding: 10px;
+    border: 1px solid #ddd; /* Border around header cells */
+    text-align: center;
+    font-weight: lighter; /* Light font weight for headers */
+}
+
+/* Data cell styles */
+.product-table td {
+    padding: 8px; /* Padding inside cells */
+    text-align: center;
+    border: 1px solid #ddd; /* Light border for data cells */
+    vertical-align: middle; /* Center vertically */
+}
+
+/* Input field styles */
+.product-table input {
+    width: 100%; /* Full width of the cell */
+    height: 40px; /* Consistent height */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: center; /* Center-align text */
+    border: 1px solid #ddd; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    padding: 0 10px; /* Padding inside input fields */
+    font-size: 16px; /* Match font size with table */
+}
+
+/* Header labels alignment */
+.cell-heading {
+    display: block; /* Block display for headings inside cells */
+    font-weight: lighter; /* Light font weight for headings */
+    margin-bottom: 4px; /* Space between heading and content */
+}
+
+/* Label container styles */
+.label-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 8px; /* Padding inside the label container */
+}
+
+/* Styles for Add Description label */
+.add-description {
+    color: #080808; /* Gray color for Add Description */
+}
+
+/* Styles for Duplicate label */
+.duplicate-label {
+    color: #080808; /* Blue color for Duplicate label */
+}
+
+/* Action button styles */
+.remove-btn {
+    background-color:#f4f3ff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+
+/* Summary Section */
+.summary-section{
+    margin-top: 60px;
+}
+
+
+
+/* styles.css */
+
+/* Base button styling */
+.action-btn {
+    cursor: pointer;
+    border: 1px solid var(--border);
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adjust gap between icon and text */
+    min-width: 160px; /* Adjust to fit the text and icon */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-align: left; /* Align text to the left */
+ 
+}
+
+.action-btn i {
+    font-size: 16px; /* Adjust size of icon */
+}
+
+.actions {
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 20px; /* Space between buttons */
+    margin: 20px 0; /* Margin around the button container */
+    padding: 0 0px; /* Padding to prevent buttons from touching edges */
+}
+
+@media (max-width: 768px) {
+    .action-btn {
+        flex: 1 1 calc(50% - 20px); /* Two buttons per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .action-btn {
+        flex: 1 1 100%; /* One button per row */
+    }
+}
+
+
+
+.actions button:hover {
+    background-color: rgba(196, 196, 196, 0.09);
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .form-group.row {
+        flex-direction: column;
+    }
+
+    .address-column {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .address-column:nth-child(even) {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+    }
+
+    .actions button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+.product-table td {
+    max-width: 100px; /* Adjust as needed */
+}
+
+
+.product-table-wrapper {
+    overflow-x:visible; 
+
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders to avoid double borders */
+    min-width: 90px; /* Adjust to fit your needs */
+    
+}
+
+.product-table th,
+.product-table td {
+    border: none; /* Remove all borders */
+    padding: 8px; /* Padding inside cells */
+    text-align: center;
+    font-size: 16px; /* Font size for better fit */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+}
+
+.product-table th {
+    background-color: #f4f4f4; /* Uniform background color for header row */
+    border-bottom: none; /* Remove bottom border for header cells */
+    font-weight: lighter; /* Bold text for headers */
+}
+
+.product-table td {
+    border-top: none; /* Remove top border for table data cells */
+}
+
+/* Optional: Remove the border around the entire table if not needed */
+.product-table {
+    border: none;
+}
+
+
+/* 
+.product-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+} */
+
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin-top: 7cap;
+}
+
+.col-md-8, .col-md-4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.col-md-4 {
+    justify-content: flex-end;
+}
+
+.icon-btn1 {
+    margin-left: 10px;
+    border: none;
+    padding: 7px;
+
+    font: 8px;
+    background: transparent;
+    cursor: pointer
+}
+.product-table td {
+background-color:  #f4f3ff;
+}
+
+.product-table th{
+    background-color: #6938ef;
+    color: white;
+    height: 64px;
+} 
+
+
+
+.product-table input {
+    width: 100%; /* Full width of the cell */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: center; /* Center-align text */
+    overflow: hidden; /* Hide overflow content */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+ 
+}
+
+
+
+.cell-heading {
+    display: block; /* Block display for headings inside cells */
+    font-weight: lighter; /* Bold headings */
+    margin-bottom: 4px; /* Space between heading and content */
+}
+
+/* styles.css */
+
+/* Ensure these styles do not affect global body or universal elements */
+.order-summary-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.order-summary-container {
+    width: 550px; 
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    background-color: #ffffff;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.order-summary-column {
+    max-width: 100%;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.summary-item label {
+ padding: 5px;
+    margin-right: 15px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.summary-item span {
+    flex: 2;
+    font-size: 16px;
+    text-align: right;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .order-summary-container {
+        padding: 15px;
+        width: 100%;
+        max-width: 400px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .order-summary-container {
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .summary-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .summary-item label,
+    .summary-item span {
+        width: 100%;
+        text-align: left;
+    }
+
+    .icon-button {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+/* 
+
+
+
+
+/* Base styling for the button container */
+.frame-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    padding: 20px; /* Add padding as needed */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Container for buttons */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Base styling for buttons */
+.action-button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Adjust as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000; /* Text color */
+    background-color: #007bff; /* Default background color */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px; /* Minimum width */
+}
+
+/* Specific styles for 'Cancel' button */
+.cancel-button {
+    background-color: transparent; /* Red background color for Cancel */
+    border: 1px solid #ddd;
+    position: relative;
+    font-size: var(--font-size-base);
+    line-height: 16px;
+    font-weight: 600;
+    color: var(--secondary-text);
+    display: inline-block;
+    min-width: 54px;
+        cursor: pointer;
+    border: 1px solid var(--border);
+    padding: var(--padding-2xs) 47px;
+    background-color: transparent;
+    border-radius: var(--br-11xs);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Specific styles for 'Save' button */
+.save-button {
+    position: relative;
+    font-size: var(--font-size-base);
+    line-height: 16px;
+    font-weight: 600;
+    font-family: var(--font-inter);
+    color: var(--white-icon);
+    text-align: left;
+    display: inline-block;
+    min-width: 38px;
+
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-smi) 56px;
+    background-color: var(--action-color);
+    border-radius: var(--br-11xs);
+    justify-content: center;
+}
+
+/* Hover effects */
+.save-button:hover {
+    background-color: #ff3d85; /* Darker background on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.cancel-button:hover {
+    background-color: var(--color-silver-200);
+    border: 1px solid var(--color-silver-100);
+    box-sizing: border-box;
+  }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .frame-wrapper {
+        padding: 10px;
+    }
+    .action-button {
+        font-size: 14px; /* Adjust font size on smaller screens */
+        padding: 8px 16px; /* Adjust padding on smaller screens */
+    }
+}
+
+
+.add-more-btn{
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: 8px;
+    background: transparent;
+    cursor: pointer;
+
+
+
+}
+
+
+.add-more{
+position: relative;
+top: 10px;
+}
+
+
+
+
+/* create receipt */
+.summary-item-receipt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    
+}
+
+.summary-item-receipt label {
+    flex: 1;
+    margin-right: 15px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.summary-item-receipt input ,
+.summary-item-receipt select{
+    flex: 1;
+    font-size: 16px;
+    text-align: left;
+    padding: 6px;
+}
+
+/* stock details */
+.stock-table select{
+    width: 100%; /* Full width of the cell */
+    height: 40px; /* Consistent height */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: center; /* Center-align text */
+    border: 1px solid #ddd; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    padding: 0 10px; /* Padding inside input fields */
+    font-size: 16px; /* Match font size with table */
+background-color: #FBF7FF;
+}
+
+
+/* Table styles */
+.stock-table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders to avoid double borders */
+    border-radius: 8px; /* Rounded corners for the entire table */
+    overflow: hidden; /* Ensure content respects border radius */
+}
+
+
+/* Data cell styles */
+.stock-table td {
+    padding: 8px; /* Padding inside cells */
+    text-align: center;
+    border: 1px solid #ddd; /* Light border for data cells */
+    vertical-align: middle; /* Center vertically */
+}
+
+/* Input field styles */
+.stock-table input {
+    width: 100%; /* Full width of the cell */
+    height: 40px; /* Consistent height */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: left; /* Center-align text */
+    border: 1px solid #ddd; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    padding: 0 10px; /* Padding inside input fields */
+    font-size: 16px; /* Match font size with table */
+    background-color: #FBF7FF;
+}
+.stock-table td {
+    background-color:  #FBF7FF;
+    }
+    
+    .stock-table th{
+        background-color: #6938ef;
+        color: white;
+        height: 64px;
+    } 
+    
+    .stock-table th,
+.stock-table td {
+    border: none; /* Remove all borders */
+    padding: 8px; /* Padding inside cells */
+    text-align: left;
+    font-size: 16px; /* Font size for better fit */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+}
+.addiconsq{
+    position: relative;
+    top: 4px;
+}
+
+.duplicatecopy{
+    position: relative;
+    top: 4px;
+}
