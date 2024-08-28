@@ -809,3 +809,96 @@ background-color: #FBF7FF;
     position: relative;
     top: 4px;
 }
+
+
+
+
+
+    /* notification */
+
+
+
+    .notification-container03 {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .notification-icon {
+        cursor: pointer;
+        font-size: 24px;
+      }
+      
+      .notification-popup03 {
+        display: none;
+        position: absolute;
+        /* right: 0; */
+        top: 45px;
+        left:860px;
+        width: 300px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+      
+      .popup-header03 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      .popup-content03 {
+        padding: 10px;
+      }
+      
+      .close {
+        cursor: pointer;
+        font-size: 18px;
+      }
+      
+      .button_01 {
+        margin: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      
+      
+      /* logout */
+      
+      
+      
+      .logout-container03 {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .logout-icon {
+        cursor: pointer;
+        font-size: 24px;
+      }
+      
+      .logout-popup03 {
+        display: none;
+        position: fixed;
+        /* right: 0; */
+        top: 59px;
+        left:1370px;
+        width: 90px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      
+      }
+      
+      
+      
+      
+      
+      .button_2 {
+        margin: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
